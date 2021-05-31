@@ -2,7 +2,7 @@
 
 ## Overview
 
-Configuration setup of my esphome configuration. 
+Configuration setup of my esphome configuration.
 
 ## Devices
 
