@@ -1,0 +1,17 @@
+platform: template
+name: ${name} 433
+id: screens_sw
+assumed_state: True
+optimistic: True
+turn_on_action:
+  - remote_transmitter.transmit_raw:
+      code: 
+      repeat:
+        times: 10
+        wait_time: 5000us
+turn_off_action:
+  - remote_transmitter.transmit_raw:
+      code: 
+      repeat:
+        times: 10
+        wait_time: 5000us
