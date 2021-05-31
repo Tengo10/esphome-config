@@ -1,0 +1,14 @@
+---
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_pw
+  reboot_timeout: ${reboot_timeout}
+  ap:
+    ssid: ${device}
+    password: !secret ap_wifi_pw
+  manual_ip:
+    static_ip: ${esp_ip}
+    gateway: 192.168.178.1
+    subnet: 255.255.255.0
+  fast_connect: true
+captive_portal:

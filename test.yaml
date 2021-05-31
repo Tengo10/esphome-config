@@ -1,0 +1,13 @@
+---
+substitutions:
+  device: test
+  name: Test
+  reboot_timeout: 14d
+  esp_ip: 192.168.178.230
+esphome:
+  name: ${device}
+  platform: ESP32
+  board: nodemcu-32s
+
+<<: !include common/common.yaml
+<<: !include common/sensors.yaml
