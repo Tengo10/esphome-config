@@ -1,0 +1,8 @@
+---
+platform: shtcx
+temperature:
+  name: "${name} Temperatur"
+humidity:
+  name: "${name} Humidity"
+address: 0x70
+update_interval: ${interval}
