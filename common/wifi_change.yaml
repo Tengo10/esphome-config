@@ -1,5 +1,6 @@
 ---
 wifi:
+  use_address: ${old_ip}
   ssid: !secret wifi_ssid
   password: !secret wifi_pw
   reboot_timeout: ${reboot_timeout}
