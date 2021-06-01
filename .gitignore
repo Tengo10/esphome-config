@@ -1,9 +1,18 @@
 # Gitignore settings for ESPHome
 # This is an example and may include too much for your use-case.
 # You can modify this file to suit your needs.
+desktop.ini
+
 */
 !common/
 !common/**
 common/rf_devices/*
 !common/rf_devices/template*
 common/secrets.yaml
+
+# VSCode stuff
+.vscode/*
+!.vscode/cSpell.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+.env
