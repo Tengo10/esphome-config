@@ -1,0 +1,22 @@
+---
+dallas:
+  - pin: 23
+
+i2c:
+  sda: 21
+  scl: 22
+  scan: True
+
+remote_receiver:
+  pin: 
+    number: 35
+  dump: rc_switch
+  tolerance: 50%
+  filter: 250us
+  idle: 2ms
+  buffer_size: 2kb
+
+remote_transmitter:
+  carrier_duty_percent: 100%
+  pin: 
+    number: 32
