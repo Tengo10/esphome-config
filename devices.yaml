@@ -1,0 +1,31 @@
+---
+substitutions:
+  device: max
+  name: Max
+  reboot_timeout: 14d
+  interval: 60s
+  esp_ip: 192.168.178.232
+
+esphome:
+  name: ${device}
+  platform: ESP32
+  board: nodemcu-32s
+
+<<: !include common/etc/esp32_std.yaml
+
+
+
+
+binary_sensor:
+  - !include common/binary_sensor/status.yaml
+  - !include common/rf_devices/remote1A.yaml
+  - !include common/rf_devices/remote1B.yaml
+
+sensor:
+  - !include common/sensor/shtcx.yaml
+  - !include common/sensor/uptime.yaml
+  - !include common/sensor/wifi-signal.yaml
+
+switch:
+  - !include common/rf_devices/socket1.yaml
+  - !include common/rf_devices/socket2.yaml
